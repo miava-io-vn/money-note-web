@@ -3,9 +3,9 @@ import { memberService } from "../services";
 import type { TMember } from "../types/member.type";
 import { queryKeys } from "./keys";
 
-export const memberQueryOption = queryOptions<TMember[]>({
+export const allMembersQueryOption = queryOptions<TMember[]>({
   queryKey: queryKeys.all,
   queryFn: () => {
-    return memberService.getListMember();
+    return memberService.getAllMembers();
   },
 });

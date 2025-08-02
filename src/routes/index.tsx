@@ -1,16 +1,10 @@
-import { memberQueryOption } from "@/features/member/queries/options";
 import { createFileRoute } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: RouteComponent,
-  loader: async ({ context }) => {
-    await context.queryClient.ensureQueryData(memberQueryOption);
-  },
 });
 
 function RouteComponent() {
-  // const { data } = useSuspenseQuery(memberQueryOption);
-
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
