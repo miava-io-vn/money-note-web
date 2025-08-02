@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Home, Wallet, Settings, BarChart3, Users } from "lucide-react";
+import { Wallet, Settings, BarChart3, Users } from "lucide-react";
 import { Link, useLocation } from "@tanstack/react-router";
 
 import {
@@ -20,14 +20,9 @@ import {
 
 const navigationItems = [
   {
-    title: "Dashboard",
-    icon: Home,
-    href: "/",
-  },
-  {
     title: "Transactions",
     icon: Wallet,
-    href: "/transactions",
+    href: "/",
   },
   {
     title: "Analytics",
