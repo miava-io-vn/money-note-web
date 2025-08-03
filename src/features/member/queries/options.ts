@@ -9,3 +9,17 @@ export const allMembersQueryOption = queryOptions<TMember[]>({
     return memberService.getAllMembers();
   },
 });
+
+export const activeMembersQueryOption = queryOptions<TMember[]>({
+  queryKey: queryKeys.active,
+  queryFn: () => {
+    return memberService.getActiveMembers();
+  },
+});
+
+export const autoGenMembersQueryOption = queryOptions<TMember[]>({
+  queryKey: queryKeys.autoGen,
+  queryFn: () => {
+    return memberService.getAutoGenMembers();
+  },
+});
