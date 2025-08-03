@@ -25,9 +25,9 @@ const navigationItems = [
     href: "/",
   },
   {
-    title: "Analytics",
+    title: "Summary",
     icon: BarChart3,
-    href: "/analytics",
+    href: "/summary",
   },
   {
     title: "Members",
